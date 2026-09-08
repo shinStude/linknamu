@@ -5,13 +5,13 @@ export type LinkItem = {
 };
 
 export const profile = {
-  name: "Shin Jaemin",
-  bio: "세계 최강 바이브코더",
-  avatarUrl: "",
+  name: "신재민",
+  bio: "풀스택 개발자 : 요즘에는 AI 개발에 관심이 많아요. ",
+  avatarUrl: "/profile.jpg",
 };
 
 export const links: LinkItem[] = [
-  { id: "blog", label: "블로그", url: "https://example.com/blog" },
-  { id: "github", label: "GitHub", url: "https://github.com" },
-  { id: "instagram", label: "Instagram", url: "https://instagram.com" },
+  { id: "github", label: "🐙 GitHub", url: "https://github.com/shinStude" },
+  { id: "blog", label: "📝 블로그", url: "https://godwebstory.tistory.com/" },
+  { id: "email", label: "📧 이메일", url: "mailto:tlswoals87@naver.com" },
 ];

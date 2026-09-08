@@ -3,26 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --background: #f4f4f5;
-  --foreground: #171717;
+  --background: #fdf6ec;
+  --foreground: #2b241d;
   --card: #ffffff;
-  --card-border: #e4e4e7;
-  --muted: #71717a;
+  --card-border: #f0e0cc;
+  --muted: #8a7a68;
+  --gradient-from: #fdf6ec;
+  --gradient-to: #ffe1c2;
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --card: #18181b;
-  --card-border: #27272a;
-  --muted: #a1a1aa;
+  --background: #18140f;
+  --foreground: #f3ece2;
+  --card: #221b14;
+  --card-border: #362a1e;
+  --muted: #b6a795;
+  --gradient-from: #1b1712;
+  --gradient-to: #2d2015;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  background: linear-gradient(160deg, var(--gradient-from), var(--gradient-to));
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+    sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @layer utilities {
